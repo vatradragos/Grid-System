@@ -1,0 +1,386 @@
+<!-- Created by Dragoş Vatră  0743503240  vatradragos@yaoo.com -->
+<!-- Start web page -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start <head> elements -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Trips - Created and built by Dragoș Vatră</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<!-- Stop <head> elements -->
+<!-- Start <body> elements -->
+<body>
+    <!-- Start <section> elements -->
+    <section>
+        <!-- Start <navbar> elements -->
+        <div class="menu">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger">
+            <ol class="list" id="list">
+                <a href="../index.html" target="_blank" class="tooltip">Home<span class="tooltiptext">My Portfolio</span></a>
+                <input type="button" value="Add Trip" id="add-trip" onclick="addTrip(event)">
+                <a href="#" class="tooltip">Paris<span class="tooltiptext">19 07 2020</span></a>
+                <a href="#" class="tooltip">Mumbai<span class="tooltiptext">07 05 2018</span></a>
+                <a href="#" class="tooltip">NewYork<span class="tooltiptext">25 10 2021</span></a>
+                <a href="#" class="tooltip">Peru<span class="tooltiptext">30 11 2015</span></a>
+            </ol>
+        </div>
+        <!-- Stop <navbar> elements -->
+        <!-- Start My Trips elements -->
+        <div class="gif" id="gif">
+            <h1>My Trips</h1>
+        </div>
+        <!-- Stop My Trips elements -->
+        <!-- Start Trips elements -->
+        <div class="grid-divs" id="grid-divs">
+            <div class="item" id="item-1">Paris(click)
+                <figure class="image">
+                    <img src="images/paris.jpg" alt="Paris" id="paris">
+                </figure>
+            </div>
+            <div class="item" id="item-2">Mumbai(click)
+                <figure class="image">
+                    <img src="images/mumbai.jpg" alt="Mumbai" id="mumbai">
+                </figure>
+            </div>
+            <div class="item" id="item-3">New York(click)
+                <figure class="image">
+                    <img src="images/new_york.jpg" alt="New-York" id="new_york">
+                </figure>
+            </div>
+            <div class="item" id="item-4">Peru(click)
+                <figure class="image">
+                    <img src="images/peru.jpg" alt="Peru" id="peru">
+                </figure>
+            </div>
+            <div class="item" id="item-5">
+                <a href="images/paris-1.jpg" target="_blank">
+                <figure class="image">
+                    <img src="images/paris-1.jpg" alt="" class="paris place" id="image-5">
+                </figure></a>19 07 2020 Paris
+            </div>
+            <div class="item" id="item-6">
+                <a href="https://www.youtube.com/watch?v=JjBLKufI_T0" target="_blank">
+                <figure class="image">
+                    <img src="images/mumbai-1.jpg" alt="" class="mumbai place" id="image-6">
+                </figure></a>07 05 2018 Mumbai  
+            </div>
+            <div class="item" id="item-7">
+                <a href="images/new_york-1.jpg" target="_blank">
+                <figure class="image">
+                    <img src="images/new_york-1.jpg" alt="" class="new_york place" id="image-7">
+                </figure></a>25 10 2021 New York                
+            </div>
+            <div class="item" id="item-8">
+                <a href="https://www.youtube.com/watch?v=bggqMH7GKAg" target="_blank">
+                <figure class="image">
+                    <img src="images/peru-1.jpeg" alt="" class="peru place" id="image-8">
+                </figure></a>30 11 2015 Peru                
+            </div>
+            <div class="item" id="item-9">
+                <a href="https://www.youtube.com/watch?v=bDvG0Zr6zxg" target="_blank">
+                <figure class="image">
+                    <img src="images/paris-2.jpg" alt="" class="paris place" id="image-9">
+                </figure></a>19 07 2020 Paris               
+            </div>
+            <div class="item" id="item-10">
+                <a href="images/mumbai-2.jpg" target="_blank">
+                <figure class="image">
+                    <img src="images/mumbai-2.jpg" alt="" class="mumbai place" id="image-10">
+                </figure></a>07 05 2018 Mumbai                
+            </div>
+            <div class="item" id="item-11">
+                <a href="https://www.youtube.com/watch?v=vA3OuEd4e1c" target="_blank">
+                <figure class="image">
+                    <img src="images/new_york-2.jpg" alt="" class="new_york place" id="image-11">
+                </figure></a>25 10 2021 New York               
+            </div>
+            <div class="item" id="item-12">
+                <a href="images/peru-2.jpg" target="_blank">
+                <figure class="image">
+                    <img src="images/peru-2.jpg" alt="" class="peru place" id="image-12">
+                </figure></a>30 11 2015 Peru                
+            </div>
+            <div class="item" id="item-13">
+                <a href="images/paris-3.jpg" target="_blank">
+                <figure class="image">
+                    <img src="images/paris-3.jpg" alt="" class="paris place" id="image-13">
+                </figure></a>19 07 2020 Paris            
+            </div>
+            <div class="item" id="item-14">
+                <a href="https://www.youtube.com/watch?v=r-9vO8yLkTw" target="_blank">
+                <figure class="image">
+                    <img src="images/mumbai-3.jpg" alt="" class="mumbai place" id="image-14">
+                </figure></a>07 05 2018 Mumbai               
+            </div>
+            <div class="item" id="item-15">
+                <a href="images/new_york-3.jpg" target="_blank">
+                <figure class="image">
+                    <img src="images/new_york-3.jpg" alt="" class="new_york place" id="image-15">
+                </figure></a>25 10 2021 New York                
+            </div>
+            <div class="item" id="item-16">
+                <a href="https://www.youtube.com/watch?v=5Cff874-Dmc" target="_blank">
+                <figure class="image">
+                    <img src="images/peru-3.jpg" alt="" class="peru place" id="image-16">
+                </figure></a>30 11 2015 Peru                
+            </div>
+            <div class="item" id="item-17">
+                <a href="https://www.youtube.com/watch?v=oz45k8EYblk" target="_blank">
+                <figure class="image">
+                    <img src="images/paris-4.jpg" alt="" class="paris place" id="image-17">
+                </figure></a>19 07 2020 Paris                
+            </div>
+            <div class="item" id="item-18">
+                <a href="images/mumbai-4.jpg" target="_blank">
+                <figure class="image">
+                    <img src="images/mumbai-4.jpg" alt="" class="mumbai place" id="image-18">
+                </figure></a>07 05 2018 Mumbai                
+            </div>
+            <div class="item" id="item-19">
+                <a href="https://www.youtube.com/watch?v=zTcIvWixGOk" target="_blank">
+                <figure class="image">
+                    <img src="images/new_york-4.jpg" alt="" class="new_york place" id="image-19">
+                </figure></a>25 10 2021 New York                
+            </div>
+            <div class="item" id="item-20">
+                <a href="images/peru-4.jpg" target="_blank">
+                <figure class="image">
+                    <img src="images/peru-4.jpg" alt="" class="peru place" id="image-20">
+                </figure></a>30 11 2015 Peru                
+            </div>
+        </div>
+        <!-- Stop Trips elements -->
+        <!-- Start My New Trips elements -->
+        <div class="gif" id="gif-2">
+            <h1>New Trips</h1>
+        </div>
+        <!-- Stop My New Trips elements -->
+        <!-- Start New Trips elements -->
+        <div class="new-grid-divs" id="new-grid-divs">
+            <div class="new-item" id="new-item-1">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-1" type="button" value="Add New Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" class="new-trips" id="new-trips-1">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-1" type="button" value="Date and Location" onclick="changeDateloc1(event)"/>
+                <p class="new-dateloc" id="new-dateloc-1"></p>
+            </div>
+            <div class="new-item" id="new-item-2">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-2" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" class="new-trips" id="new-trips-2">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-2" type="button" value="Date and Location" onclick="changeDateloc2(event)"/>
+                <p class="new-dateloc" id="new-dateloc-2"></p>
+            </div>
+            <div class="new-item" id="new-item-3">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-3" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" class="new-trips" id="new-trips-3">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-3" type="button" value="Date and Location" onclick="changeDateloc3(event)"/>
+                <p class="new-dateloc" id="new-dateloc-3"></p>
+            </div>
+            <div class="new-item" id="new-item-4">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-4" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" class="new-trips" id="new-trips-4">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-4" type="button" value="Date and Location" onclick="changeDateloc4(event)"/>
+                <p class="new-dateloc" id="new-dateloc-4"></p>
+            </div>
+            <div class="new-item" id="new-item-5">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-5" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-5">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-5" type="button" value="Date and Location" onclick="changeDateloc5(event)"/>
+                <p class="new-dateloc" id="new-dateloc-5"></p>
+            </div>
+            <div class="new-item" id="new-item-6">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-6" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-6">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-6" type="button" value="Date and Location" onclick="changeDateloc6(event)"/>
+                <p class="new-dateloc" id="new-dateloc-6"></p>
+            </div>
+            <div class="new-item" id="new-item-7">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-7" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-7">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-7" type="button" value="Date and Location" onclick="changeDateloc7(event)"/>
+                <p class="new-dateloc" id="new-dateloc-7"></p>
+            </div>
+            <div class="new-item" id="new-item-8">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-8" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-8">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-8" type="button" value="Date and Location" onclick="changeDateloc8(event)"/>
+                <p class="new-dateloc" id="new-dateloc-8"></p>
+            </div>
+            <div class="new-item" id="new-item-9">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-9" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-9">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-9" type="button" value="Date and Location" onclick="changeDateloc9(event)"/>
+                <p class="new-dateloc" id="new-dateloc-9"></p>
+            </div>
+            <div class="new-item" id="new-item-10">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-10" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-10">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-10" type="button" value="Date and Location" onclick="changeDateloc10(event)"/>
+                <p class="new-dateloc" id="new-dateloc-10"></p>
+            </div>
+            <div class="new-item" id="new-item-11">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-11" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-11">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-11" type="button" value="Date and Location" onclick="changeDateloc11(event)"/>
+                <p class="new-dateloc" id="new-dateloc-11"></p>
+            </div>
+            <div class="new-item" id="new-item-12">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-12" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-12">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-12" type="button" value="Date and Location" onclick="changeDateloc12(event)"/>
+                <p class="new-dateloc" id="new-dateloc-12"></p>
+            </div>
+            <div class="new-item" id="new-item-13">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-13" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-13">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-13" type="button" value="Date and Location" onclick="changeDateloc13(event)"/>
+                <p class="new-dateloc" id="new-dateloc-13"></p>
+            </div>
+            <div class="new-item" id="new-item-14">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-14" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-14">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-14" type="button" value="Date and Location" onclick="changeDateloc14(event)"/>
+                <p class="new-dateloc" id="new-dateloc-14"></p>
+            </div>
+            <div class="new-item" id="new-item-15">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-15" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-15">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-15" type="button" value="Date and Location" onclick="changeDateloc15(event)"/>
+                <p class="new-dateloc" id="new-dateloc-15"></p>
+            </div>
+            <div class="new-item" id="new-item-16">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-16" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-16">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-16" type="button" value="Date and Location" onclick="changeDateloc16(event)"/>
+                <p class="new-dateloc" id="new-dateloc-16"></p>
+            </div>
+            <div class="new-item" id="new-item-17">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-17" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-17">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-17" type="button" value="Date and Location" onclick="changeDateloc17(event)"/>
+                <p class="new-dateloc" id="new-dateloc-17"></p>
+            </div>
+            <div class="new-item" id="new-item-18">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-18" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-18">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-18" type="button" value="Date and Location" onclick="changeDateloc18(event)"/>
+                <p class="new-dateloc" id="new-dateloc-18"></p>
+            </div>
+            <div class="new-item" id="new-item-19">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-19" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-19">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-19" type="button" value="Date and Location" onclick="changeDateloc19(event)"/>
+                <p class="new-dateloc" id="new-dateloc-19"></p>
+            </div>
+            <div class="new-item" id="new-item-20">
+                <input id="fileid" type="file" hidden/>
+                <input class="image-button" id="image-button-20" type="button" value="Add Trip Image"/>
+                <figure class="image">
+                    <img src="images/new-trips.jpg" alt="New Trips" id="new-trips-20">
+                </figure>
+                <input class="dateloc-button" id="dateloc-button-20" type="button" value="Date and Location" onclick="changeDateloc20(event)"/>
+                <p class="new-dateloc" id="new-dateloc-20"></p>
+            </div>
+        </div>
+        <!-- Stop New Trips elements -->
+        <!-- Start Next Trips elements -->
+        <div class="next-trips" id="next-trips">
+            <h1 id="next-trips-text">My next trips</h1>
+            <div class="sun" id="sun"></div>
+        </div>
+        <div class="counter">
+            <p id="counter"></p>
+        </div>
+        <div class="grid-container">
+          <div class="world" id="world">
+              <img class="world_png" id="world_png" src="images/world.png">
+          </div>
+        </div>
+        <!-- Stop Next Trips elements -->
+    </section>
+    <!-- Stop <section> elements -->
+    <!-- Start <footer> elements -->
+    <footer>
+        <a href="../index.html" target="_blank"><p>Created by Dragoş Vatră &#169; 2021-2022 All rights reserved</p></a>
+    </footer>
+    <!-- Stop <footer> elements -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/paris.js"></script>
+    <script src="js/mumbai.js"></script>
+    <script src="js/peru.js"></script>
+    <script src="js/new_york.js"></script>
+    <script src="js/next_trips.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/magnifier.js"></script>
+    <script src="js/add_trip.js"></script>
+    <script src="js/change_image.js"></script>
+    <script src="js/change_dateloc.js"></script>
+</body>
+<!-- Stop <body> elements -->
+</html>
+<!-- Stop web page -->
